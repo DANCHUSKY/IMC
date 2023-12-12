@@ -6,13 +6,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".firstapp.FirstAppActivity">
 
+    <androidx.appcompat.widget.AppCompatEditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" />
 
-    <View
-        android:layout_width="123dp"
-        android:layout_height="125dp"
-        android:background="@color/black"
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hola mundo"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/material_dynamic_neutral20"
         />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
